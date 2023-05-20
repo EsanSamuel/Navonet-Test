@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  background: black url("./assets/bg_texture.png");
+}
+
+.nav{
+   background: black url("./assets/bg_texture.png");
+}
+
+body {
+}
+.coinbile {
+  color: #6affae;
+}
+
+div {
+  background: transparent;
+}
+
+.button {
+  background: linear-gradient(90deg, #6affae, #5ce2ff);
+}
+
+.button:hover {
+  background: #6affae;
+}
+
+top {
+  background: #6affae;
+  width: 270px;
+  position: absolute;
+  top: 0;
+  filter: blur(100px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eaeaea;
+  border-radius: 10px;
+}
+
+.glass {
+  background: transparent;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(155, 139, 139, 0.18);
+}
+
+.card {
+  border: 1px solid rgba(155, 139, 139, 0.18);
+}
+
+.image {
+  width: 100%;
+}
+
+.image::after {
+  content: "";
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  from {
+    transform: rotate(1turn);
+  }
+}
